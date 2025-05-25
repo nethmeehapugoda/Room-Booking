@@ -37,7 +37,13 @@ const UserSchema = new mongoose.Schema({
     Contact :{
         type:Number,
         required:true,
-    }
+    },
+    role:{
+        type:String,
+        enum:["admin","user"],
+        default:"user",
+    },
+   
     },
 
     
@@ -51,4 +57,4 @@ const UserSchema = new mongoose.Schema({
 })
 
 const User = mongoose.model("User",UserSchema);
-export default User
+export default User;
