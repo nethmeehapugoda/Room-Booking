@@ -15,9 +15,7 @@ pids
 *.seed
 *.pid.lock
 
-# Environment variables
-.env
-.env.*.local
+
 
 # OS-specific files
 .DS_Store
